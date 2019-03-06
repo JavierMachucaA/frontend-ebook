@@ -1,0 +1,28 @@
+header .brand{
+    margin:0 auto;
+}
+header .logo{
+    padding: 0 2%;
+}
+
+header{
+    margin-bottom: 40px;   
+    box-shadow: 0 0.5rem 1rem rgba(4, 4, 4, 0.28), inset 0 -1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.navbar {
+    
+    background:#ad8eb5eb ;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #ffffff;
+
+}
+
+li.nav-item.active {
+    background: #9876b7f7;
+}
+
+li.nav-item{
+    border-radius: 10px 10px 0px 0px;
+}

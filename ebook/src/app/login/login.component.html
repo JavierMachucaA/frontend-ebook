@@ -1,0 +1,32 @@
+
+    <div class="login_content">
+        <h3 class="text-center"><i> Inicie su Sesion </i> </h3>
+        
+<div class="form-group">
+  <form [formGroup]="loginForm" >
+    <label for="">Email</label>
+    <input  type="text" 
+            pInputText 
+            formControlName="email"
+            class="form-control" 
+            [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required">El Email es requerido</div>
+        <div *ngIf="f.email.errors">Espacios no son permitidos</div>
+    </div>
+
+    <label for="">Contraseña</label>
+    <input  type="password"
+             
+            formControlName="password" 
+            [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+            class="form-control"/> 
+    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required">La Contraseña es requerida</div>
+        <div *ngIf="f.password.errors.minlength">La Contraseña debe ser válida </div>
+        <div *ngIf="f.password.errors.pattern">Ingrese valores alfanumericos</div>
+    </div>
+    <button pButton type="submit" (click)="onSubmit()" label="Ingresar" class="btn  col-12"></button>
+  </form>
+</div>
+</div>

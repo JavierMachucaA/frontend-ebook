@@ -1,0 +1,11 @@
+<p-card header="{{categoria.title}}" subheader="Tenemos recetas como" styleClass="ui-card-shadow">
+    <p-header>
+    </p-header>
+
+    <p-listbox [options]="recetasCategoria" [(ngModel)]="recetaSeleccionada" (onChange)="seleccionarReceta($event)" ></p-listbox><!--filter="filter"-->
+    
+    <p-footer>
+        <!--<button pButton (click)="MostrarRecetas()"></button>-->Haz click sobre una receta
+    </p-footer>
+</p-card>
+

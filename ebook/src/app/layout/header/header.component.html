@@ -1,0 +1,53 @@
+<header class=" flex-md-row ">
+  <div class="">
+    <div class="row">
+      <div class="col-2 logo">
+        <a class="navbar-brand" routerLink="/inicio" aria-label="Bootstrap">
+          <img class="logo" src="../assets/images/icono_salud_cocina.png" alt="Logo CNE" height="120" />
+        </a>
+      </div>
+      <div class="col-8 brand">
+        <h1 class="main_title">Nutriendo tu cocina
+        </h1>
+        <h3><span><i>Consejos nutricionales y recetas de cocina</i></span></h3>
+      </div>
+      <div class="col-2 brand clear-fix right">
+        
+      </div>
+    </div>
+    
+    <!--<a class="nav-item nav-link" *ngIf="nombreUsuario">{{nombreUsuario}}</a>-->
+    <!--<a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" (click)="cerrarSesion()" *ngIf="nombreUsuario">Cerrar
+    Sesión</a>-->
+  </div>
+  <div class="">
+    <nav class="navbar navbar-expand-lg navbar-toggleable-md navbar-light ">
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item " [routerLinkActive]="['active']">
+            <a class="nav-link" routerLink="/inicio">Inicio</a>
+          </li>
+          
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" routerLink="/recetas">Recetas</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" routerLink="/contacto">Contacto</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" routerLink="/nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item ml-auto" [routerLinkActive]="['active']">
+            <a class="nav-link" routerLink="/login">Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
